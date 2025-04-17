@@ -113,11 +113,26 @@ main {
 }
 
 @media screen and (max-width: 640px) {
+
+    #header {
+        flex-direction: column;
+    }
+
+
+    /*TODO: fix the navbar so that everything is evenly spaced out vertically*/
     .nav-bar_list {
         flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .nav-link {
+        margin: 15px;
     }
 
     .prices_container {
         flex-direction: column;
     }
+
+
 }
