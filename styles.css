@@ -2,6 +2,9 @@
     --background-color: #538cc6;
 }
 
+
+/* General */
+
 * {
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
@@ -10,6 +13,9 @@
 p {
     text-align: center;
 }
+
+
+/* Header */
 
 #header {
     display: flex;
@@ -22,16 +28,18 @@ p {
     background-color: white;
 }
 
+
+/* Header - Logo */
+
 .logo {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    width: 40%;
 }
 
 #header-img {
-    width: 25%;
+    width: 85px;
 }
 
 #logo_text {
@@ -39,8 +47,11 @@ p {
     font-weight: bold;
 }
 
+
+/* Header - Navigation Bar */
+
 .nav-bar_list {
-    list-style: none;
+    list-style-type: none;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -54,8 +65,11 @@ p {
     margin: 0 15px;
 }
 
+
+/* Main */
+
 main {
-    margin-bottom: 10%;
+    margin-bottom: 10vh;
 }
 
 .content_section {
@@ -68,12 +82,18 @@ main {
 .content_section header {
     font-weight: bold;
     font-size: 20px;
-    margin: 7% 0 2% 0;
+    margin: 7vh 0 2vh 0;
 }
+
+
+/* Main - About */
 
 .about_text {
     width: 70%;
 }
+
+
+/* Main - Prices */
 
 .prices_container {
     display: flex;
@@ -101,6 +121,9 @@ main {
     font-style: italic;
 }
 
+
+/* Main - Contact */
+
 #form {
     display: flex;
     flex-direction: column;
@@ -112,27 +135,22 @@ main {
     padding: 1%;
 }
 
-@media screen and (max-width: 640px) {
+
+@media screen and (max-width: 800px) {
 
     #header {
         flex-direction: column;
     }
 
-
-    /*TODO: fix the navbar so that everything is evenly spaced out vertically*/
     .nav-bar_list {
+        display: block;
         flex-direction: column;
-        justify-content: start;
-        align-items: center;
+        padding: 0;
     }
 
-    .nav-link {
-        margin: 15px;
+    .nav-bar-item {
+        margin-bottom: 15px;
+        text-align: center;
     }
-
-    .prices_container {
-        flex-direction: column;
-    }
-
 
 }
