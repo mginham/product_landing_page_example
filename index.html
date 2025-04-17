@@ -8,24 +8,83 @@
 </head>
 <body>
     <header id="header">
-        <img src="Assets/Images/Harmonys_Harmonica_Logo.jpeg" alt="Harmony's Harmonicas logo" id="header-img">
-        <nav id="nav-bar">
-            <ul>
-                <li class="nav-bar-item">
-                    <a href="/" class="nav-link">Home</a>
-                </li>
-                <li class="nav-bar-item">
-                    <a href="#About" class="nav-link">About</a>
-                </li>
-                <li class="nav-bar-item">
-                    <a href="#Prices" class="nav-link">Prices</a>
-                </li>
-            </ul>
-        </nav>
+        <div class="logo">
+            <img src="Assets/Images/Harmonys_Harmonica_Logo.jpeg" alt="Harmony's Harmonicas logo" id="header-img">
+            <header id="logo_text">Harmony's Harmonicas</header>
+        </div>
+        <div class="nav-bar">
+            <nav id="nav-bar">
+                <div class="nav-bar_container">
+                    <ul class="nav-bar_list">
+                        <li class="nav-bar-item">
+                            <a href="/" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-bar-item">
+                            <a href="#About" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-bar-item"></li>
+                            <a href="#Educational" class="nav-link">Educational</a>
+                        </li>
+                        <li class="nav-bar-item">
+                            <a href="#Prices" class="nav-link">Prices</a>
+                        </li>
+                        <li class="nav-bar-item"></li>
+                            <a href="#Contact" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     </header>
     <main>
-        <section>
-            <iframe width="420" height="315" src="https://youtu.be/Zc-EcRFrxcA?si=It3Vt7dbKfznC_px" id="video">If you are just learning, here is a video to start you off!</iframe>
+        <section class="content_section" id="About">
+            <header>About Us</header>
+                <div class="about_text">
+                    <p>Here at Harmony's Harmonicas, we take pride in over 50 years of musical excellence!</p>
+                    <p>As a music lover, Harmony understands the importance of quality materials and fine crafting, which is why she started her own business where she could personally ensure both!</p>
+                </div>
+        </section>
+        <section class="content_section" id="Educational">
+            <header>Educational</header>
+            <div class="edu_video">
+                <iframe width="420" height="315" src="https://youtu.be/Zc-EcRFrxcA?si=It3Vt7dbKfznC_px" id="video"></iframe>
+                <p>If you are just learning, here is a video to start you off!</p>
+            </div>
+        </section>
+        <section class="content_section" id="Prices">
+            <header>Prices</header>
+            <div class="prices_container">
+                <div class="price_item">
+                    <p class="price_name">Brass Harmonica</p>
+                    <p class="price_number">$70</p>
+                    <p class="price_description">For those who love a more rustic aesthetic</p>
+                </div>
+                <div class="price_item">
+                    <p class="price_name">Stainless Harmonica</p>
+                    <p class="price_number">$50</p>
+                    <p class="price_description">Never worry about rust a day in your life</p>
+                </div>
+                <div class="price_item">
+                    <p class="price_name">Gold Harmonica</p>
+                    <p class="price_number">$100</p>
+                    <p class="price_description">Nothing shines quite like gold</p>
+                </div>
+            </div>
+        </section>
+        <section class="content_section" id="Contact">
+            <header>Contact Us</header>
+            <div class="contact_form">
+                <p>If you have any questions, please submit your email below and we will get back to you!</p>
+                <form id="form">
+                    <div class="form_email">
+                        <label>Email:</label>
+                        <input type="email" id="email" name="email" placeholder="enter your email here">
+                    </div>
+                    <div class="form_submit">
+                        <input type="submit" value="Submit" formaction="https://www.freecodecamp.com/email-submit" id="submit">
+                    </div>
+                </form>
+            </div>
         </section>
     </main>
 </body>
